@@ -70,7 +70,7 @@ public class BanksPage {
 	private WebElement proceedButton;
 	
 	@FindBy(xpath="//div[@class='toast-txt']")
-	private WebElement toastText;
+	private List<WebElement> toastText;
 	
 	@FindBy(xpath="//button[@class='close-btn']")
 	private WebElement toastClose;
@@ -95,6 +95,9 @@ public class BanksPage {
 	
 	@FindBy (id="bank-list-item-rbs-sandbox")
 	private WebElement rbs;
+	
+	@FindBy (id="bank-list-item-atoa-payment-test")
+	private WebElement atoaBank;
 	
 	public BanksPage(WebDriver driver) 
 	{
@@ -245,12 +248,12 @@ public class BanksPage {
 		 proceedButton.click();
 	}
 
-	public WebElement getToast() {
+	public List<WebElement> getToast() {
 		return toastText;
 	}
 	
-	public String getToastText() {
-		return toastText.getText();
+	public String getToastText(int index) {
+		return toastText.get(index).getText();
 	}
 
 	public WebElement getToastClose() {
@@ -311,6 +314,11 @@ public class BanksPage {
 	
 	public void clickRbs() {
 		 rbs.click();
+	}
+	
+	public void clickAtoaBank()
+	{
+		atoaBank.click();
 	}
 	
 	

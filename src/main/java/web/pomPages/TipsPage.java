@@ -28,7 +28,7 @@ public class TipsPage {
 	@FindBy(id="amount-input-box-id")
 	private WebElement amountTextBox;
 	
-	@FindBy(id="//span[@class='form-input rq-form-element']")
+	@FindBy(xpath="//span[@class='form-input rq-form-element']")
 	private WebElement amountText;
 	
 	@FindBy(id="payment-edit-amount-btn")
@@ -37,16 +37,16 @@ public class TipsPage {
 	@FindBy(xpath="//span[@class='title']")
 	private WebElement tipBoxTitle;
 	
-	@FindBy(xpath="(//div[@class='tip-option-chip'])[1]")
+	@FindBy(xpath="(//div[@class='tip-option-content'])[1]")
 	private WebElement tipOption1;
 	
-	@FindBy(xpath="(//div[@class='tip-option-chip'])[2]")
+	@FindBy(xpath="(//div[@class='tip-option-content'])[2]")
 	private WebElement tipOption2;
 	
-	@FindBy(xpath="(//div[@class='tip-option-chip'])[3]")
+	@FindBy(xpath="(//div[@class='tip-option-content'])[3]")
 	private WebElement tipOption3;
 	
-	@FindBy(xpath="(//div[@class='tip-option-chip'])[4]")
+	@FindBy(xpath="(//div[@class='tip-option-content'])[4]")
 	private WebElement customTipOption;
 	
 	@FindBy(xpath="//div[@class='tip-option-chip selected']")

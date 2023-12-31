@@ -8,17 +8,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 
-import genericLibrary.BaseClass;
-import pomPages.BankSelectionPageWithoutAmount;
-import pomPages.TipSelectionPageWithoutAmount;
+import web.genericLibraries.BaseClass;
 import web.pomPages.BanksPage;
-import web.pomPages.CustomerDetailsPage;
 import web.pomPages.DesktopQRPage;
 import web.pomPages.EnterAmountPage;
 import web.pomPages.TipsPage;
 
 
-public class Assertions extends web.genericLibraries.BaseClass{
+public class Assertions extends BaseClass{
 	
 	public WebDriver desktopQRPageVerification(WebDriver driver,String env, String merchant) throws IOException
 	{
@@ -144,7 +141,7 @@ public class Assertions extends web.genericLibraries.BaseClass{
 		sa.assertEquals(bp.getAmountEditButton().isEnabled(), true, "Edit amount button");
 		}
 		sa.assertEquals(bp.getViewAllBanksButton().isEnabled(), true, "View all banks link");
-
+		
 		Reporter.log("Bank Tiles displayed", true);
 		for (int i = 0; i <= (bp.getBankTabsContainer().size()) - 1; i++) {
 			List<WebElement> list = driver.findElements(By.xpath("//div[@class='banklist-container']/descendant::label"));
@@ -155,61 +152,13 @@ public class Assertions extends web.genericLibraries.BaseClass{
 		bp.getHowToPayWithAtoaButton().click();
 		sa.assertEquals(bp.getHowItWorksImage().isDisplayed(), true, "How it works image");
 
-		sa.assertEquals(bp.getPoweredByText(), " Atoa is powered by Yapily Connect Ltd, a company regulated and authorised by the UK Financial Conduct Authority", "Powered by information");
+		sa.assertEquals(bp.getPoweredByText(), "Atoa is powered by Yapily Connect Ltd, a company regulated and authorised by the UK Financial Conduct Authority", "Powered by information");
 		return driver;
 	}
 	
-	public WebDriver verifyBanksRedirection(WebDriver driver,String env,String merchant,String paymentMode)
-	{
-		BanksPage bp = new BanksPage(driver);
-		bp.getViewAllBanksButton().click();
-		for (int i = 0; i <= (bp.getAllBankList().size()) - 1; i++) {
-			
-			List<WebElement> list = driver.findElements(By.xpath("//div[@class='card']/descendant::ul[@class='all-bank-list']/descendant::li"));
-			String bankName = list.get(i).getText();
-			list.get(i).click();
-			
-			List<WebElement> toast = driver.findElements(By.xpath("//div[@class='toast-txt']"));
-			
-				if (toast.size() > 0) {
-					
-					Reporter.log(i + 1+". " + bankName + " is Ineligible or Down", true);
-					bp.getToastClose().click();
-				}
-			else if (toast.size() == 0) {
-				if(paymentMode.equalsIgnoreCase("link"))
-				{
-					bp.clickTermsCheckbox();
-					Thread.sleep(3000);
-				}
-				bp.clickProceedButton();
-				Thread.sleep(5000);
-				if(merchant.equalsIgnoreCase("25K"))
-				{
-				CustomerDetailsPage cdp1 = new CustomerDetailsPage(driver);
-				if(cdp1.getMobileNumber().getAttribute("value")=="")
-				{
-				new InFlowActions().enterCustomerDetails(driver,"7057371758","Atoa Business", "91 Springboard");
-				}
-				
-				CustomerDetailsPage cdp = new CustomerDetailsPage(driver);
-		
-				cdp.clickProceedButton();
-				Thread.sleep(5000);
-				}
-				bp.clickProceedButton();
-				Thread.sleep(10000);
-				utilities.switchingtabs(driver);
-				sa.assertEquals(bankPageTitles.contains(driver.getTitle()), true, bankName);
-				Reporter.log(i + 1+". " + bankName + " is navigating to ("+driver.getTitle()+")", true);
-			} 
-			
-			Thread.sleep(3000);
-			new InFlowActions().goToAllBanksPage(paymentMode, driver,env);
-		}
-
-	return driver;
-	}
+	
+	
+	
 	
 
 }

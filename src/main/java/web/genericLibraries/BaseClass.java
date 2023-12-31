@@ -34,10 +34,10 @@ public class BaseClass
 	public List<String> sourceOfIncome= new ArrayList<String>();
 	public List<String> nationality= new ArrayList<String>();
 	
-	@Parameters({"env", "paymentMode", "browserName", "merchant"})
+	@Parameters({"env", "paymentMode", "browser", "merchant"})
 	@BeforeMethod
 	public void open(String env, String paymentMode, String browser, String merchant) throws IOException
-	{
+	{	
 		if(browser.equalsIgnoreCase("chrome"))
 		{ 
 			ChromeOptions options = new ChromeOptions();
@@ -79,9 +79,7 @@ public class BaseClass
 			driver.navigate().to(pdata.getPropertydata(env+"StaticQR"+merchant));
 		}
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
-		driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(15));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		new Initialization().initialization();
 	}
@@ -96,7 +94,7 @@ public class BaseClass
 	@AfterTest
 	public void assertAllMethods()
 	{
-		
+		sa.assertAll();
 	}
  
 }
