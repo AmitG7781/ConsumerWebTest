@@ -20,7 +20,7 @@ public class PaymentPagesVerification extends BaseClass{
 		Thread.sleep(2000);
 		new Assertions().desktopQRPageVerification(driver, env, merchant);
 		new PageMethods().clickContinueOnThisDeviceButton(driver);
-		if(paymentMode.equalsIgnoreCase("staticQR")||paymentMode.equalsIgnoreCase("physicalQR"));
+		if(paymentMode.equalsIgnoreCase("staticQR")||paymentMode.equalsIgnoreCase("physicalQR"))
 		{
 			new Assertions().enterAmountPageVerification(driver, env, merchant, amount);
 			new FlowActions().enterAmountAndProceed(driver, amount);	
