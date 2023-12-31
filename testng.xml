@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test1">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="link"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="15K"></parameter>
+		<parameter name="tipOption" value="2"></parameter>
+		<parameter name="tip" value="100"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+				 <methods>
+					<include name="paymentPagesVerification"/>
+		         </methods>
+			  </class>
+			        <!--class name="web.paymentTest.BankRedirection">
+				 <methods>
+					<include name="banksRedirectionTest"/>
+		         </methods>
+			  </class-->
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test2">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="link"></parameter>
+		<parameter name="merchant" value="Suspended"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+			      <methods>
+			      	<include name="suspendedBusinessVerification"/>
+			      </methods>
+		      </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test3">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="link"></parameter>
+		<parameter name="merchant" value="Blocked"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+			      <methods>
+			        <include name="blockedBusinessVerification"/>
+			      </methods>
+		      </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test4">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="link"></parameter>
+		<parameter name="merchant" value="Fraudulent"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+			      <methods>
+			        <include name="fraudulentBusinessVerification"/>
+			      </methods>
+		      </class>
+		    </classes>
+	</test> <!-- Test -->
+<!--_____________________________________Test Dynamic QR______________________________________-->
+	<test thread-count="5" name="Test5">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="dynamicQR"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="15K"></parameter>
+		<parameter name="tipOption" value="2"></parameter>
+		<parameter name="tip" value="100"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+				 <methods>
+					<include name="paymentPagesVerification"/>
+		         </methods>
+			  </class>
+			        <!--class name="web.paymentTest.BankRedirection">
+				 <methods>
+					<include name="banksRedirectionTest"/>
+		         </methods>
+			  </class-->
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test6">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="dynamicQR"></parameter>
+		<parameter name="merchant" value="Suspended"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+			      <methods>
+			      	<include name="suspendedBusinessVerification"/>
+			      </methods>
+		      </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test7">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="dynamicQR"></parameter>
+		<parameter name="merchant" value="Blocked"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+			      <methods>
+			        <include name="blockedBusinessVerification"/>
+			      </methods>
+		      </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test8">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="dynamicQR"></parameter>
+		<parameter name="merchant" value="Fraudulent"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+			      <methods>
+			        <include name="fraudulentBusinessVerification"/>
+			      </methods>
+		      </class>
+		    </classes>
+	</test> <!-- Test -->
+<!--_____________________________________Test Physical QR_____________________________________-->
+	<test thread-count="5" name="Test9">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="physicalQR"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="15K"></parameter>
+		<parameter name="tipOption" value="2"></parameter>
+		<parameter name="tip" value="100"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+				 <methods>
+					<include name="paymentPagesVerification"/>
+		         </methods>
+			  </class>
+			        <!--class name="web.paymentTest.BankRedirection">
+				 <methods>
+					<include name="banksRedirectionTest"/>
+		         </methods>
+			  </class-->
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test10">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="physicalQR"></parameter>
+		<parameter name="merchant" value="Suspended"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+			      <methods>
+			      	<include name="suspendedBusinessVerification"/>
+			      </methods>
+		      </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test11">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="physicalQR"></parameter>
+		<parameter name="merchant" value="Blocked"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+			      <methods>
+			        <include name="blockedBusinessVerification"/>
+			      </methods>
+		      </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test12">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="physicalQR"></parameter>
+		<parameter name="merchant" value="Fraudulent"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+			      <methods>
+			        <include name="fraudulentBusinessVerification"/>
+			      </methods>
+		      </class>
+		    </classes>
+	</test> <!-- Test -->
+<!--_____________________________________Test Static QR____________________________________ _-->
+	<test thread-count="5" name="Test13">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="staticQR"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="15K"></parameter>
+		<parameter name="tipOption" value="2"></parameter>
+		<parameter name="tip" value="100"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+				 <methods>
+					<include name="paymentPagesVerification"/>
+		         </methods>
+			  </class>
+			        <!--class name="web.paymentLinkAndDynamicQRTest.BankRedirection">
+				 <methods>
+					<include name="banksRedirectionTest"/>
+		         </methods>
+			  </class-->
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test14">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="staticQR"></parameter>
+		<parameter name="merchant" value="Suspended"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+			      <methods>
+			      	<include name="suspendedBusinessVerification"/>
+			      </methods>
+		      </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test15">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="staticQR"></parameter>
+		<parameter name="merchant" value="Blocked"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+			      <methods>
+			        <include name="blockedBusinessVerification"/>
+			      </methods>
+		      </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test16">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="staticQR"></parameter>
+		<parameter name="merchant" value="Fraudulent"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+			      <methods>
+			        <include name="fraudulentBusinessVerification"/>
+			      </methods>
+		      </class>
+		    </classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
