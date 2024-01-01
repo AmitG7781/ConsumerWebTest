@@ -35,17 +35,17 @@ public class FlowActions extends PageMethods{
 			}
 			else if(paymentMode.equalsIgnoreCase("dynamicQR"))
 			{
-				driver.navigate().to(pdata.getPropertydata(env+"dynamicQR"+merchant));
+				driver.navigate().to(pdata.getPropertydata(env+"DynamicQR"+merchant));
 			}
 			else if(paymentMode.equalsIgnoreCase("link"))
 			{
-				driver.navigate().to(pdata.getPropertydata("link"));
+				driver.navigate().to(pdata.getPropertydata(env+"Link"+merchant));
 			}
 		
 		
 		clickContinueOnThisDeviceButton(driver);
 		
-		if(paymentMode.equalsIgnoreCase("staticQR")||paymentMode.equalsIgnoreCase("physicalQR"));
+		if(paymentMode.equalsIgnoreCase("staticQR")||paymentMode.equalsIgnoreCase("physicalQR"))
 		{
 			enterAmountAndProceed(driver, amount);	
 		}

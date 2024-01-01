@@ -16,7 +16,7 @@ public class BankRedirection extends BaseClass{
 	{
 		new FlowActions().clickContinueOnThisDeviceButton(driver);
 		
-		if(paymentMode.equalsIgnoreCase("staticQR")||paymentMode.equalsIgnoreCase("physicalQR"));
+		if(paymentMode.equalsIgnoreCase("staticQR")||paymentMode.equalsIgnoreCase("physicalQR"))
 		{
 			new FlowActions().enterAmountAndProceed(driver, amount);	
 		}

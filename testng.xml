@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<test thread-count="5" name="Test1">
+<!--_____________________________________Link______________________________________-->
+	<test thread-count="5" name="Link1">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="link"></parameter>
@@ -15,14 +16,62 @@
 					<include name="paymentPagesVerification"/>
 		         </methods>
 			  </class>
-			        <!--class name="web.paymentTest.BankRedirection">
+			  <class name="web.paymentTest.BankRedirection">
 				 <methods>
 					<include name="banksRedirectionTest"/>
 		         </methods>
-			  </class-->
+			  </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="Test2">
+	<test thread-count="5" name="Link1">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="link"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="25K"></parameter>
+		<parameter name="tipOption" value="2"></parameter>
+		<parameter name="tip" value="100"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+				 <methods>
+					<include name="paymentPagesVerification"/>
+		         </methods>
+			  </class>
+			</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Link2">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="link"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="15K"></parameter>
+		<parameter name="tipOption" value="4"></parameter>
+		<parameter name="tip" value="15000"></parameter>
+			<classes>
+			   <class name="web.paymentTest.TestTextFieldsInPaymentFlow">
+				 <methods>
+					<include name="enterTipToTestAmountLimit"/>
+		         </methods>
+			   </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Link3">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="link"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="25K"></parameter>
+		<parameter name="tipOption" value="4"></parameter>
+		<parameter name="tip" value="25000"></parameter>
+			<classes>
+			   <class name="web.paymentTest.TestTextFieldsInPaymentFlow">
+				 <methods>
+					<include name="enterTipToTestAmountLimit"/>
+		         </methods>
+			   </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Link3">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="link"></parameter>
@@ -34,8 +83,8 @@
 			      </methods>
 		      </class>
 		    </classes>
-	</test> <!-- Test -->
-	<test thread-count="5" name="Test3">
+	</test> <!--  Test -->
+	<test thread-count="5" name="Link4">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="link"></parameter>
@@ -47,8 +96,8 @@
 			      </methods>
 		      </class>
 		    </classes>
-	</test> <!-- Test -->
-	<test thread-count="5" name="Test4">
+	</test> <!--  Test -->
+	<test thread-count="5" name="Link5">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="link"></parameter>
@@ -60,9 +109,9 @@
 			      </methods>
 		      </class>
 		    </classes>
-	</test> <!-- Test -->
-<!--_____________________________________Test Dynamic QR______________________________________-->
-	<test thread-count="5" name="Test5">
+	</test> <!--  Test -->
+<!-- _____________________________________Dynamic QR______________________________________-->
+	<test thread-count="5" name="DynamicQR1">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="dynamicQR"></parameter>
@@ -76,14 +125,62 @@
 					<include name="paymentPagesVerification"/>
 		         </methods>
 			  </class>
-			        <!--class name="web.paymentTest.BankRedirection">
+			  <class name="web.paymentTest.BankRedirection">
 				 <methods>
 					<include name="banksRedirectionTest"/>
 		         </methods>
-			  </class-->
+			  </class>
+		    </classes>
+	</test> <!--  Test -->
+	<test thread-count="5" name="DynamicQR1">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="dynamicQR"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="25K"></parameter>
+		<parameter name="tipOption" value="2"></parameter>
+		<parameter name="tip" value="100"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+				 <methods>
+					<include name="paymentPagesVerification"/>
+		         </methods>
+			  </class>
+		    </classes>
+	</test> <!--  Test -->
+	<test thread-count="5" name="DynamicQR2">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="dynamicQR"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="15K"></parameter>
+		<parameter name="tipOption" value="4"></parameter>
+		<parameter name="tip" value="15000"></parameter>
+			<classes>
+			   <class name="web.paymentTest.TestTextFieldsInPaymentFlow">
+				 <methods>
+					<include name="enterTipToTestAmountLimit"/>
+		         </methods>
+			   </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="Test6">
+	<test thread-count="5" name="DynamicQR2">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="dynamicQR"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="25K"></parameter>
+		<parameter name="tipOption" value="4"></parameter>
+		<parameter name="tip" value="25000"></parameter>
+			<classes>
+			   <class name="web.paymentTest.TestTextFieldsInPaymentFlow">
+				 <methods>
+					<include name="enterTipToTestAmountLimit"/>
+		         </methods>
+			   </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="DynamicQR3">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="dynamicQR"></parameter>
@@ -95,8 +192,8 @@
 			      </methods>
 		      </class>
 		    </classes>
-	</test> <!-- Test -->
-	<test thread-count="5" name="Test7">
+	</test> <!--  Test -->
+	<test thread-count="5" name="DynamicQR4">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="dynamicQR"></parameter>
@@ -108,8 +205,8 @@
 			      </methods>
 		      </class>
 		    </classes>
-	</test> <!-- Test -->
-	<test thread-count="5" name="Test8">
+	</test> <!--  Test -->
+	<test thread-count="5" name="DynamicQR5">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="dynamicQR"></parameter>
@@ -121,9 +218,9 @@
 			      </methods>
 		      </class>
 		    </classes>
-	</test> <!-- Test -->
-<!--_____________________________________Test Physical QR_____________________________________-->
-	<test thread-count="5" name="Test9">
+	</test> <!--  Test -->
+<!-- _____________________________________Physical QR_____________________________________-->
+	<test thread-count="5" name="PhysicalQR1">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="physicalQR"></parameter>
@@ -137,14 +234,110 @@
 					<include name="paymentPagesVerification"/>
 		         </methods>
 			  </class>
-			        <!--class name="web.paymentTest.BankRedirection">
+			  <class name="web.paymentTest.BankRedirection">
 				 <methods>
 					<include name="banksRedirectionTest"/>
 		         </methods>
-			  </class-->
+			  </class>
+		    </classes>
+	</test> <!--  Test -->
+	<test thread-count="5" name="PhysicalQR1">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="physicalQR"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="25K"></parameter>
+		<parameter name="tipOption" value="2"></parameter>
+		<parameter name="tip" value="100"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+				 <methods>
+					<include name="paymentPagesVerification"/>
+		         </methods>
+			  </class>
+		    </classes>
+	</test> <!--  Test -->
+	<test thread-count="5" name="PhysicalQR2">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="physicalQR"></parameter>
+		<parameter name="amount" value="15001"></parameter>
+		<parameter name="merchant" value="15K"></parameter>
+		<parameter name="tipOption" value="2"></parameter>
+		<parameter name="tip" value="100"></parameter>
+			<classes>
+			   <class name="web.paymentTest.TestTextFieldsInPaymentFlow">
+				 <methods>
+					<include name="enterAmountLimitTest"/>
+		         </methods>
+			   </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="Test10">
+	<test thread-count="5" name="PhysicalQR2">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="physicalQR"></parameter>
+		<parameter name="amount" value="25001"></parameter>
+		<parameter name="merchant" value="25K"></parameter>
+		<parameter name="tipOption" value="2"></parameter>
+		<parameter name="tip" value="100"></parameter>
+			<classes>
+			   <class name="web.paymentTest.TestTextFieldsInPaymentFlow">
+				 <methods>
+					<include name="enterAmountLimitTest"/>
+		         </methods>
+			   </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="PhysicalQR3">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="physicalQR"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="15K"></parameter>
+		<parameter name="tipOption" value="4"></parameter>
+		<parameter name="tip" value="15000"></parameter>
+			<classes>
+			   <class name="web.paymentTest.TestTextFieldsInPaymentFlow">
+				 <methods>
+					<include name="enterTipToTestAmountLimit"/>
+		         </methods>
+			   </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="PhysicalQR3">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="physicalQR"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="25K"></parameter>
+		<parameter name="tipOption" value="4"></parameter>
+		<parameter name="tip" value="25000"></parameter>
+			<classes>
+			   <class name="web.paymentTest.TestTextFieldsInPaymentFlow">
+				 <methods>
+					<include name="enterTipToTestAmountLimit"/>
+		         </methods>
+			   </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="PhysicalQR4">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="physicalQR"></parameter>
+		<parameter name="amount" value="0.1"></parameter>
+		<parameter name="merchant" value="15K"></parameter>
+		<parameter name="tipOption" value="2"></parameter>
+		<parameter name="tip" value="100"></parameter>
+			<classes>
+			   <class name="web.paymentTest.TestTextFieldsInPaymentFlow">
+				 <methods>
+					<include name="enterAmountLimitTest"/>
+		         </methods>
+			  </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="PhysicalQR5">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="physicalQR"></parameter>
@@ -156,8 +349,8 @@
 			      </methods>
 		      </class>
 		    </classes>
-	</test> <!-- Test -->
-	<test thread-count="5" name="Test11">
+	</test> <!--  Test -->
+	<test thread-count="5" name="PhysicalQR6">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="physicalQR"></parameter>
@@ -169,8 +362,8 @@
 			      </methods>
 		      </class>
 		    </classes>
-	</test> <!-- Test -->
-	<test thread-count="5" name="Test12">
+	</test> <!--  Test -->
+	<test thread-count="5" name="PhysicalQR7">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="physicalQR"></parameter>
@@ -182,9 +375,9 @@
 			      </methods>
 		      </class>
 		    </classes>
-	</test> <!-- Test -->
-<!--_____________________________________Test Static QR____________________________________ _-->
-	<test thread-count="5" name="Test13">
+	</test> <!--  Test -->
+<!-- _____________________________________Static QR______________________________________-->
+	<test thread-count="5" name="StaticQR1">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="staticQR"></parameter>
@@ -198,14 +391,110 @@
 					<include name="paymentPagesVerification"/>
 		         </methods>
 			  </class>
-			        <!--class name="web.paymentLinkAndDynamicQRTest.BankRedirection">
+			  <class name="web.paymentTest.BankRedirection">
 				 <methods>
 					<include name="banksRedirectionTest"/>
 		         </methods>
-			  </class-->
+			  </class>
+		    </classes>
+	</test> <!--  Test -->
+	<test thread-count="5" name="StaticQR1">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="staticQR"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="25K"></parameter>
+		<parameter name="tipOption" value="2"></parameter>
+		<parameter name="tip" value="100"></parameter>
+			<classes>
+		      <class name="web.paymentTest.PaymentPagesVerification">
+				 <methods>
+					<include name="paymentPagesVerification"/>
+		         </methods>
+			  </class>
+		    </classes>
+	</test> <!--  Test -->
+	<test thread-count="5" name="StaticQR2">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="staticQR"></parameter>
+		<parameter name="amount" value="15001"></parameter>
+		<parameter name="merchant" value="15K"></parameter>
+		<parameter name="tipOption" value="2"></parameter>
+		<parameter name="tip" value="100"></parameter>
+			<classes>
+			   <class name="web.paymentTest.TestTextFieldsInPaymentFlow">
+				 <methods>
+					<include name="enterAmountLimitTest"/>
+		         </methods>
+			   </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="Test14">
+	<test thread-count="5" name="StaticQR2">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="staticQR"></parameter>
+		<parameter name="amount" value="25001"></parameter>
+		<parameter name="merchant" value="25K"></parameter>
+		<parameter name="tipOption" value="2"></parameter>
+		<parameter name="tip" value="100"></parameter>
+			<classes>
+			   <class name="web.paymentTest.TestTextFieldsInPaymentFlow">
+				 <methods>
+					<include name="enterAmountLimitTest"/>
+		         </methods>
+			   </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="StaticQR3">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="staticQR"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="15K"></parameter>
+		<parameter name="tipOption" value="4"></parameter>
+		<parameter name="tip" value="15000"></parameter>
+			<classes>
+			   <class name="web.paymentTest.TestTextFieldsInPaymentFlow">
+				 <methods>
+					<include name="enterTipToTestAmountLimit"/>
+		         </methods>
+			   </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="StaticQR3">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="staticQR"></parameter>
+		<parameter name="amount" value="1000"></parameter>
+		<parameter name="merchant" value="25K"></parameter>
+		<parameter name="tipOption" value="4"></parameter>
+		<parameter name="tip" value="25000"></parameter>
+			<classes>
+			   <class name="web.paymentTest.TestTextFieldsInPaymentFlow">
+				 <methods>
+					<include name="enterTipToTestAmountLimit"/>
+		         </methods>
+			   </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="StaticQR4">
+		<parameter name="env" value="dev"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="paymentMode" value="staticQR"></parameter>
+		<parameter name="amount" value="0.5"></parameter>
+		<parameter name="merchant" value="15K"></parameter>
+		<parameter name="tipOption" value="2"></parameter>
+		<parameter name="tip" value="100"></parameter>
+			<classes>
+			   <class name="web.paymentTest.TestTextFieldsInPaymentFlow">
+				 <methods>
+					<include name="enterAmountLimitTest"/>
+		         </methods>
+			  </class>
+		    </classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="StaticQR5">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="staticQR"></parameter>
@@ -217,8 +506,8 @@
 			      </methods>
 		      </class>
 		    </classes>
-	</test> <!-- Test -->
-	<test thread-count="5" name="Test15">
+	</test> <!--  Test -->
+	<test thread-count="5" name="StaticQR6">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="staticQR"></parameter>
@@ -230,8 +519,8 @@
 			      </methods>
 		      </class>
 		    </classes>
-	</test> <!-- Test -->
-	<test thread-count="5" name="Test16">
+	</test> <!--  Test -->
+	<test thread-count="5" name="StaticQR7">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="staticQR"></parameter>
@@ -243,5 +532,5 @@
 			      </methods>
 		      </class>
 		    </classes>
-	</test> <!-- Test -->
+	</test> <!--  Test -->
 </suite> <!-- Suite -->

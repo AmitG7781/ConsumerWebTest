@@ -156,6 +156,41 @@ public class Assertions extends BaseClass{
 		return driver;
 	}
 	
+	public WebDriver amountLimitError(WebDriver driver, String amount)
+	{
+		EnterAmountPage eap=new EnterAmountPage(driver);
+		
+		if(Float.parseFloat(amount)>15000 && Float.parseFloat(amount)<25000)
+		{
+			sa.assertEquals(eap.getInputErrorMessageText(), "Please enter an amount smaller than £15,000");
+		}
+		else if(Float.parseFloat(amount)<1)
+		{
+			sa.assertEquals(eap.getInputErrorMessageText(), "Please enter amount greater than £1");
+		}
+		else if(Float.parseFloat(amount)>25000)
+		{
+			sa.assertEquals(eap.getInputErrorMessageText(), "Please enter an amount smaller than £25,000");
+		}
+		return driver;
+		
+	}
+	
+	public WebDriver amountLimitErrorToast(WebDriver driver, String amount)
+	{
+		TipsPage tp=new TipsPage(driver);
+		
+		if(Float.parseFloat(amount)<=15000)
+		{
+			sa.assertEquals(tp.getToastText(), "Total amount can't be more than £15000");
+		}
+		else if(Float.parseFloat(amount)<=25000)
+		{
+			sa.assertEquals(tp.getToastText(), "Total amount can't be more than £25000");
+		}
+		return driver;
+		
+	}
 	
 	
 	
