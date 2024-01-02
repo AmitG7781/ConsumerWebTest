@@ -23,7 +23,7 @@
 			  </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="Link1">
+	<test thread-count="5" name="Link2">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="link"></parameter>
@@ -39,7 +39,7 @@
 			  </class>
 			</classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="Link2">
+	<test thread-count="5" name="Link3">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="link"></parameter>
@@ -55,7 +55,7 @@
 			   </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="Link3">
+	<test thread-count="5" name="Link4">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="link"></parameter>
@@ -71,7 +71,7 @@
 			   </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="Link3">
+	<test thread-count="5" name="Link5">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="link"></parameter>
@@ -84,7 +84,7 @@
 		      </class>
 		    </classes>
 	</test> <!--  Test -->
-	<test thread-count="5" name="Link4">
+	<test thread-count="5" name="Link6">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="link"></parameter>
@@ -97,7 +97,7 @@
 		      </class>
 		    </classes>
 	</test> <!--  Test -->
-	<test thread-count="5" name="Link5">
+	<test thread-count="5" name="Link7">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="link"></parameter>
@@ -132,7 +132,7 @@
 			  </class>
 		    </classes>
 	</test> <!--  Test -->
-	<test thread-count="5" name="DynamicQR1">
+	<test thread-count="5" name="DynamicQR2">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="dynamicQR"></parameter>
@@ -148,7 +148,7 @@
 			  </class>
 		    </classes>
 	</test> <!--  Test -->
-	<test thread-count="5" name="DynamicQR2">
+	<test thread-count="5" name="DynamicQR3">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="dynamicQR"></parameter>
@@ -164,7 +164,7 @@
 			   </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="DynamicQR2">
+	<test thread-count="5" name="DynamicQR4">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="dynamicQR"></parameter>
@@ -180,7 +180,7 @@
 			   </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="DynamicQR3">
+	<test thread-count="5" name="DynamicQR5">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="dynamicQR"></parameter>
@@ -193,7 +193,7 @@
 		      </class>
 		    </classes>
 	</test> <!--  Test -->
-	<test thread-count="5" name="DynamicQR4">
+	<test thread-count="5" name="DynamicQR6">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="dynamicQR"></parameter>
@@ -206,7 +206,7 @@
 		      </class>
 		    </classes>
 	</test> <!--  Test -->
-	<test thread-count="5" name="DynamicQR5">
+	<test thread-count="5" name="DynamicQR7">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="dynamicQR"></parameter>
@@ -241,7 +241,7 @@
 			  </class>
 		    </classes>
 	</test> <!--  Test -->
-	<test thread-count="5" name="PhysicalQR1">
+	<test thread-count="5" name="PhysicalQR2">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="physicalQR"></parameter>
@@ -257,7 +257,7 @@
 			  </class>
 		    </classes>
 	</test> <!--  Test -->
-	<test thread-count="5" name="PhysicalQR2">
+	<test thread-count="5" name="PhysicalQR3">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="physicalQR"></parameter>
@@ -273,7 +273,7 @@
 			   </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="PhysicalQR2">
+	<test thread-count="5" name="PhysicalQR4">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="physicalQR"></parameter>
@@ -289,7 +289,7 @@
 			   </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="PhysicalQR3">
+	<test thread-count="5" name="PhysicalQR5">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="physicalQR"></parameter>
@@ -305,7 +305,7 @@
 			   </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="PhysicalQR3">
+	<test thread-count="5" name="PhysicalQR6">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="physicalQR"></parameter>
@@ -321,7 +321,7 @@
 			   </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="PhysicalQR4">
+	<test thread-count="5" name="PhysicalQR7">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="physicalQR"></parameter>
@@ -337,7 +337,7 @@
 			  </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="PhysicalQR5">
+	<test thread-count="5" name="PhysicalQR8">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="physicalQR"></parameter>
@@ -350,7 +350,7 @@
 		      </class>
 		    </classes>
 	</test> <!--  Test -->
-	<test thread-count="5" name="PhysicalQR6">
+	<test thread-count="5" name="PhysicalQR9">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="physicalQR"></parameter>
@@ -363,7 +363,7 @@
 		      </class>
 		    </classes>
 	</test> <!--  Test -->
-	<test thread-count="5" name="PhysicalQR7">
+	<test thread-count="5" name="PhysicalQR10">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="physicalQR"></parameter>
@@ -398,7 +398,7 @@
 			  </class>
 		    </classes>
 	</test> <!--  Test -->
-	<test thread-count="5" name="StaticQR1">
+	<test thread-count="5" name="StaticQR2">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="staticQR"></parameter>
@@ -414,7 +414,7 @@
 			  </class>
 		    </classes>
 	</test> <!--  Test -->
-	<test thread-count="5" name="StaticQR2">
+	<test thread-count="5" name="StaticQR3">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="staticQR"></parameter>
@@ -430,7 +430,7 @@
 			   </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="StaticQR2">
+	<test thread-count="5" name="StaticQR4">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="staticQR"></parameter>
@@ -446,7 +446,7 @@
 			   </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="StaticQR3">
+	<test thread-count="5" name="StaticQR5">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="staticQR"></parameter>
@@ -462,7 +462,7 @@
 			   </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="StaticQR3">
+	<test thread-count="5" name="StaticQR6">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="staticQR"></parameter>
@@ -478,7 +478,7 @@
 			   </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="StaticQR4">
+	<test thread-count="5" name="StaticQR7">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="staticQR"></parameter>
@@ -494,7 +494,7 @@
 			  </class>
 		    </classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="StaticQR5">
+	<test thread-count="5" name="StaticQR8">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="staticQR"></parameter>
@@ -507,7 +507,7 @@
 		      </class>
 		    </classes>
 	</test> <!--  Test -->
-	<test thread-count="5" name="StaticQR6">
+	<test thread-count="5" name="StaticQR9">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="staticQR"></parameter>
@@ -520,7 +520,7 @@
 		      </class>
 		    </classes>
 	</test> <!--  Test -->
-	<test thread-count="5" name="StaticQR7">
+	<test thread-count="5" name="StaticQR10">
 		<parameter name="env" value="dev"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="paymentMode" value="staticQR"></parameter>
@@ -533,4 +533,57 @@
 		      </class>
 		    </classes>
 	</test> <!--  Test -->
+	<test thread-count="4" name="Test">
+	  <parameter name="env" value="prod"></parameter>
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="redirectUrl" value=""></parameter>
+		<parameter name="callBackParameter" value="ABCDEFGHIJKLMNOPQRSTUVVWXYZ"></parameter>
+		<parameter name="amount" value="40"></parameter>
+		<parameter name="autoRedirect" value="false"></parameter>
+		<parameter name="enableTips" value="true"></parameter>
+		<parameter name="strictExpiry" value="true"></parameter>
+		<parameter name="allowRetry" value="true"></parameter>
+		<parameter name="splitBill" value="false"></parameter>
+		<parameter name="expiresIn" value="1200000"></parameter>
+		<parameter name="currency" value="GBP"></parameter>
+		<parameter name="institutionId" value="modelo-sandbox"></parameter>
+		<parameter name="paymentType" value="TRANSACTION"></parameter>
+		<parameter name="phoneCountryCode" value="44"></parameter>
+		<parameter name="phoneNumber" value="7057371758"></parameter>
+		<parameter name="email" value="amit@paywithatoa.co.uk"></parameter>
+		<parameter name="firstName" value="Atoa"></parameter>
+		<parameter name="lastName" value="Consumer"></parameter>
+		<parameter name="template" value="EXTERNAL_DISPLAY"></parameter>
+		<parameter name="customerId" value="test-customer-id"></parameter>
+		<parameter name="orderId" value="abcd"></parameter>
+		<parameter name="merchantMobile1" value="M1"></parameter>
+		<parameter name="merchantMobile2" value="M2"></parameter>
+	    <classes>
+		      <class name="api.cancelPaymentApiTest.CancelPaymentTest"/>
+		      <class name="api.getPaymentStatusApiTest.PaymentStatusTests"/>
+		      <class name="api.getStoresApiTest.AccessTokenValidationTest"/>
+		      <class name="api.getStoresApiTest.StoreDetailsValidation"/>
+		      <class name="api.processPaymentApiTest.AccessTokenValidations"/>
+		      <class name="api.processPaymentApiTest.AmountParameterValidations"/>
+		      <class name="api.processPaymentApiTest.AmountParameterValidations"/>
+		      <class name="api.processPaymentApiTest.CallBackParameterValidations"/>
+		      <class name="api.processPaymentApiTest.ConsumerDetailsParameterValidations"/>
+		      <class name="api.processPaymentApiTest.CurrencyParameterValidations"/>
+		      <class name="api.processPaymentApiTest.CustomerIdParameterValidations"/>
+		      <class name="api.processPaymentApiTest.EnableTipsParameterValidations"/>
+		      <class name="api.processPaymentApiTest.ExpiresInParameterValidations"/>
+		      <class name="api.processPaymentApiTest.InstitutionIdParameterValidations"/>
+		      <class name="api.processPaymentApiTest.OrderIdParameterValidations"/>
+		      <class name="api.processPaymentApiTest.PaymentTypeParameterValidations"/>
+		      <class name="api.processPaymentApiTest.RedirectUrlParameterValidations"/>
+		      <class name="api.processPaymentApiTest.SplitBillParameterValidations"/>
+		      <class name="api.processPaymentApiTest.StoreIdParameterValidations"/>
+		      <class name="api.processPaymentApiTest.StrictExpiryParameterValidations"/>
+		      <class name="api.processPaymentApiTest.TemplateParameterValidations"/>
+		      <class name="api.sdkPaymentTest.NormalPaymentPagesVerification"/>
+		      <class name="api.sdkPaymentTest.SplitPaymentFunctionalityTests"/>
+		      <class name="api.sdkPaymentTest.SplitPaymentTests"/>
+		      <class name="api.sdkPaymentTest.SignatureTest"/>
+	    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -89,12 +89,13 @@ public class BaseClass
 	public void close()
 	{
 		driver.quit();
+		sa.assertAll();
 	}
 	
 	@AfterTest
 	public void assertAllMethods()
 	{
-		sa.assertAll();
+		//sa.assertAll();
 	}
  
 }
